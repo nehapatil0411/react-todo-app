@@ -1,0 +1,112 @@
+
+body 
+{
+  margin: 0;
+  padding: 0;
+  min-height: 50vh;
+  font-family: "Poppins", sans-serif;
+  background: rgb(97, 97, 177);
+  background-size: 400% 400%;
+  color: white;
+}
+.app-container 
+{
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 450px;
+  margin: 60px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #333; 
+}
+
+.app-title 
+{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.input-section 
+{
+  display: flex;
+  gap: 10px;
+}
+.task-input 
+{
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  color: #333;
+}
+.task-input::placeholder 
+{
+  color: #999;
+}
+
+.add-btn 
+{
+  padding: 10px 15px;
+  background-color: #6c63ff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.task-list 
+{
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.task-item 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.task-text 
+{
+  cursor: pointer;
+  font-size: 16px;
+}
+.task-text.completed 
+{
+  text-decoration: line-through;
+  color: #999;
+}
+
+.btn-group 
+{
+  display: flex;
+  gap: 8px;
+}
+.edit-btn 
+{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #6c63ff;
+  transition: color 0.2s ease;
+}
+.delete-btn
+{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #e71515;
+  transition: color 0.2s ease; 
+}
